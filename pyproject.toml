@@ -1,31 +1,42 @@
-[build-system]
+[build-system] # <- a table
 requires = ["hatchling"]
+# The build backend defines the tool that should be used to build your package distribution files.
 build-backend = "hatchling.build"
 
 [project]
-name = "pyos-package"
-version = "0.1"
-description = 'A simple Python package that adds numbers together'
+name = "pyos_package_clin240810"
+version = "1.0"
+description = """
+A simple Python package that adds numbers together
+"""
 readme = "README.md"
 requires-python = ">=3.9"
 license = "MIT"
 keywords = []
 authors = [
   { name = "clin94118", email = "clin@ccsf.edu" },
+  { name = "nickles255", email = "nickles255@gmail.com" }
 ]
+maintainers = [
+  { name = "clin94118", email = "clin@ccsf.edu" },
+  { name = "nickles255", email = "nickles255@gmail.com" }
+]
+
 classifiers = [
   "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "Topic :: Software Development :: Build Tools",
   "Programming Language :: Python",
   "Programming Language :: Python :: 3.9",
   "Programming Language :: Python :: 3.10",
   "Programming Language :: Python :: 3.11",
   "Programming Language :: Python :: 3.12",
 ]
-dependencies = []
+dependencies = ["numpy>=1.0", "requests==10.1", "pandas", "pydantic>=1.7,<2"]
 
 [project.urls]
 Documentation = "https://github.com/clin94118/pyos-package#readme"
 Issues = "https://github.com/clin94118/pyos-package/issues"
 Source = "https://github.com/clin94118/pyos-package"
 
-path = "src/pyos_package/__about__.py"
+path = "src/pyos_package_clin240810/__about__.py"
